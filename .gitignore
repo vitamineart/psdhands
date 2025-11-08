@@ -11,13 +11,4 @@ yarn-debug.log*
 yarn-error.log*
 .idea/
 .DS_Store
-coverage/
-/.parcel-cache
-/prepros.cfg
-/HANDS.sublime-project
-/HANDS.sublime-workspace
-/HANDS.rar
-/node_modules
-/dist
-/.vscode
-/.DS_Store
+
