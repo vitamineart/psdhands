@@ -96,14 +96,14 @@
 		 }
 
 		 var animMap = {
-			 'fadeInLeft': { x: -30, opacity: 0 },
-			 'fadeInRight': { x: 30, opacity: 0 },
+			 'fadeInLeft': { x: -20, opacity: 0 },
+			 'fadeInRight': { x: 20, opacity: 0 },
 			 'fadeInUp': { y: 20, opacity: 0 },
-			 'fadeInDown': { y: -40, opacity: 0 },
+			 'fadeInDown': { y: -20, opacity: 0 },
 			 'zoomIn': { scale: 0.9, opacity: 0 },
 			 'flipInX': { rotationX: -80, transformOrigin: '50% 50%', opacity: 0 },
-			 'slideInLeft': { x: -50, opacity: 0 },
-			 'slideInRight': { x: 50, opacity: 0 },
+			 'slideInLeft': { x: -20, opacity: 0 },
+			 'slideInRight': { x: 20, opacity: 0 },
 		 };
 
 		 document.querySelectorAll('.wow').forEach(function(el) {
