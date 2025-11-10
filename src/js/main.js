@@ -129,7 +129,7 @@
 				 ...fromVars,
 				 duration: dur,
 				 delay: delay,
-				 ease: 'power3.out',
+				 ease: 'power1.inOut',
 				 scrollTrigger: {
 					 trigger: el,
 					 start: 'top 85%',
