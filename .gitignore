@@ -12,4 +12,5 @@ yarn-error.log*
 .idea/
 .DS_Store
 style.css
+.code-workspace
 
