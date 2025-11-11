@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 
 </head>
-<body class="relative">
+<body class="relative overflow-x-hidden">
     <div class="topbar bg-aqua text-white left-0 w-full fixed opacity-0 px-2.5 ">
         <div class="container mx-auto px-4 py-2">
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
@@ -38,22 +38,22 @@
         </div>
     </div>
     <div class="main_promo">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-wrap">
-                <div class="hidden sm:block sm:w-5/12 md:w-1/3 lg:w-5/12 px-4">
-                    <div class="main_promo_image wow fadeInLeft" data-wow-duration="1s">
-                        <img src="img/big_hand.png" alt="Female hand holding smartphone for app presentation mockup" class="big_hand" fetchpriority="high" decoding="async" width="600" height="800">
+        <div class="container mx-auto px-4 relative">
+            <div class="flex">
+                <div class="hidden sm:flex sm:flex-col sm:w-5/12 md:w-1/3 lg:w-5/12">
+                    <div class="main_promo_image mt-auto wow fadeInLeft" data-wow-duration="1s">
+                        <img src="img/big_hand.png" alt="Female hand holding smartphone for app presentation mockup" class="big_hand mt-16" fetchpriority="high" decoding="async" width="600" height="800">
                     </div>
                 </div>
-                <div class="w-full sm:w-7/12 md:w-2/3 lg:w-7/12 px-4">
-                    <div class="main_promo_text wow fadeInRight">
-                        <div class="main_promo_title slideInRight wow " data-wow-delay="0.1s">
+                <div class="w-full sm:w-7/12 md:w-2/3 lg:w-7/12 px-4 sm:px-0 self-center">
+                    <div class="main_promo_text py-10 wow fadeInRight text-center text-balance">
+                        <div class="slideInRight wow font-thin text-white text-4xl sm:text-5xl lg:text-7xl" data-wow-delay="0.1s">
                             App&nbsp;Presentation mockup&nbsp;bundle
                         </div>
-                        <div class="tracking-[10px] font-lato uppercase font-bold text-white my-6 slideInRight wow " data-wow-delay="0.2s">
+                        <div class="tracking-[10px] text-xs sm:text-sm font-lato uppercase font-bold text-white my-6 slideInRight wow" data-wow-delay="0.2s">
                             isolated female hands with phone
                         </div>
-                        <button class=" slideInRight wow text-4xl leading-tight duration-200 inline-block px-10 py-5 font-light rounded bg-pink hover:bg-pink/80 text-white wow cursor-pointer " data-wow-delay="0.3s">Download Bundle - 9$ <small class="block text-xs">You will be redirected to PayPal</small></button>
+                        <button class=" slideInRight wow text-3xl lg:text-4xl leading-tight duration-200 inline-block px-6 py-3 sm:px-10 sm:py-5 font-light rounded bg-pink hover:bg-pink/80 text-white wow cursor-pointer " data-wow-delay="0.3s">Download Bundle - 9$ <small class="block text-xs">You will be redirected to PayPal</small></button>
                         <div class="wow slideInRight" data-wow-delay="0.4s">
                             <a href="#" class="download">Download sample</a>
                         </div>
@@ -319,13 +319,13 @@
                     <div class="slider_box px-6 sm:px-20">
                                     <div class="swiper">
                                         <div class="swiper-wrapper">
-                                            <div class="swiper-slide" data-author="Alexandr Hrustovoi" data-team="amedia">
+                                            <div class="swiper-slide" data-author="Alexandr Hrustovoi" data-team="Amedia">
                                                 Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.
                                             </div>
-                                            <div class="swiper-slide" data-author="Alexandr Dimitrov" data-team="bx-team">
+                                            <div class="swiper-slide" data-author="Alexandr Dimitrov" data-team="Hands Team">
                                                 Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.
                                             </div>
-                                            <div class="swiper-slide" data-author="Alexandr Chapovalov" data-team="media group">
+                                            <div class="swiper-slide" data-author="Alexandr Chapovalov" data-team="Media Group">
                                                 Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.Extended license allows you to include hands in your template or bundle that is for sale. Although you can’t sell any PSD on stand-alone basis.
                                             </div>
                                         </div>
@@ -333,8 +333,8 @@
                                         <div class="swiper-button-prev"></div>
                                         <div class="swiper-button-next"></div>
                                     </div>
-                                      <div class="testimonial_author">alexandr chapovalov</div>
-                                      <div class="testimonial_author_team">amedia</div>
+                                      <div class="testimonial_author mt-8 tracking-[10px] font-lato uppercase font-bold text-sm text-silver mb-2 text-center">alexandr chapovalov</div>
+                                      <div class="testimonial_author_team tracking-[10px] uppercase font-lato text-xs mb-8 text-center text-aqua block mt-3 ">Amedia</div>
                                 </div>
             </div>
         </section>
@@ -386,15 +386,15 @@
             <div class="tracking-[10px] font-lato uppercase font-bold text-silver text-center">disqus comments</div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="mt-8 mb-[100px]">
         <div class="container mx-auto px-4">
             <div class="flex flex-wrap">
-                <div class="footer_nav wow fadeInUp px-4">
-                    <a href="#">Author</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Contact</a>
+                <div class="footer_nav mb-8 md:text-center wow fadeInUp px-4">
+                    <a href="#" class="tracking-[5px] font-lato uppercase font-bold text-xs text-aqua !no-underline mr-[45px] md:mx-5">Author</a>
+                    <a href="#" class="tracking-[5px] font-lato uppercase font-bold text-xs text-aqua !no-underline mr-[45px] md:mx-5">Contact</a>
+                    <a href="#" class="tracking-[5px] font-lato uppercase font-bold text-xs text-aqua !no-underline mr-[45px] md:mx-5">Contact</a>
                 </div>
-                <div class="copyrights wow fadeInDown px-4">
+                <div class="copyrights text-[#ababab] text-center md:ml-auto md:text-right wow fadeInDown px-4">
                     artdesigner.lv © 2014-2015. All rights reserved
                 </div>
             </div>
