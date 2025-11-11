@@ -2,7 +2,7 @@
 
 
 @theme {
-  --font-roboto: 'Roboto', sans-serif;
+  --font-sans: 'Roboto', sans-serif;
   --font-lato: 'Lato', sans-serif;
   --color-aqua: #26c6da;
   --color-pink: #e91e63;
@@ -48,24 +48,7 @@ a.download:hover {
   text-decoration: none;
   animation: icon_slide_down 0.4s cubic-bezier(0, 1.05, 1, 1) 1;
 }
-a.details_list {
-  background: url(../img/icon_downarrow.png) no-repeat right center;
-  padding-right: 20px;
-}
-@keyframes arrow_slide_down {
-  0% {
-    background-position-y: center;
-  }
-  53% {
-    background-position-y: 17px;
-  }
-  54% {
-    background-position-y: -17px;
-  }
-  100% {
-    background-position-y: center;
-  }
-}
+
 a.details_list:hover {
   animation: arrow_slide_down 0.3s cubic-bezier(0, 1.05, 1, 1) 1;
 }
@@ -89,11 +72,11 @@ a:hover {
   height: 55px;
   margin-left: 10px;
 }
-.icon_downarrow {
+/* .icon_downarrow {
   background: url(../img/icon_downarrow.png) no-repeat;
   width: 12px;
   height: 17px;
-}
+} */
 .icon_doc {
   background: url(../img/icon_doc.png) no-repeat;
   width: 13px;
