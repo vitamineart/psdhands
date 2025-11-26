@@ -125,23 +125,31 @@
 				 el.style.backfaceVisibility = 'hidden';
 			 }
 
-			 gsap.from(el, {
-				 ...fromVars,
+			 // Set initial state immediately
+			 gsap.set(el, fromVars);
+
+			 // Animate to final state when scrolled into view
+			 gsap.to(el, {
+				 opacity: 1,
+				 x: 0,
+				 y: 0,
+				 scale: 1,
+				 rotationX: 0,
+				 transformOrigin: '50% 50%',
 				 duration: dur,
 				 delay: delay,
 				 ease: 'power1.inOut',
 				 scrollTrigger: {
 					 trigger: el,
 					 start: 'top 85%',
-					 toggleActions: 'play none none none',
+					 toggleActions: 'play none none none'
 				 }
 			 });
 		 });
 	 } else {
 		 // If GSAP wasn't loaded for some reason, fallback to simply showing elements
 		 document.querySelectorAll('.wow').forEach(function(el) {
-			 el.style.visibility = 'visible';
-			 el.style.opacity = 1;
+			 el.style.opacity = '1';
 		 });
 	 }
 

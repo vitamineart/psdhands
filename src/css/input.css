@@ -9,6 +9,11 @@
   --color-silver: #90a4ae;
 }
 
+/* Hide WOW animation elements initially to prevent flash */
+.wow {
+  opacity: 0;
+}
+
 .container {
   @apply max-w-5xl;
 }
