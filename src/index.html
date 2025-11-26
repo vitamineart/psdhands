@@ -20,8 +20,10 @@
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&display=swap' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css" media="print" onload="this.media='all'" />
+
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 
 </head>
@@ -71,7 +73,7 @@
             <div class="container mx-auto px-4 space-y-10 text-pretty">
                 <article>
                     <div class="flex items-center flex-col md:flex-row  md:gap-10">
-                        <div class="md:w-1/2 sm_align_left wow fadeInDown px-4">
+                        <div class="md:w-1/2 sm_align_left wow fadeInDown px-4" data-wow-delay="0.7s">
                             <div class="tracking-[10px] font-lato uppercase font-bold mb-6 text-pink text-center md:text-left">what’s inside bundle?</div>
                             <p>
                                 Bundle contains 8 various HQ layered PSD files with phone screen as SmartObjects that will allow fast presentation for your mobile application.
@@ -89,7 +91,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="md:w-1/2 text-center wow fadeInUp px-4">
+                        <div class="md:w-1/2 text-center wow fadeInUp px-4" data-wow-delay="0.8s">
                             <img src="img/bundle.png" class="w-full h-auto" alt="PSD bundle preview showing 8 different hand mockups" loading="lazy" fetchpriority="low" decoding="async" width="600" height="800">
                             <div class="text-center">
                                 <br>
